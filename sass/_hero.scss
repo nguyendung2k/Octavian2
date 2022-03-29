@@ -1,0 +1,25 @@
+.hero {
+  padding: 270px 0 380px;
+  color: white;
+
+  &-heading {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 120px;
+    margin-bottom: 15px;
+  }
+
+  &-caption {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+
+  &-video {
+    display: flex;
+    align-items: center;
+    gap: 0 25px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}

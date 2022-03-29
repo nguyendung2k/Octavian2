@@ -1,0 +1,48 @@
+.experience {
+  padding-bottom: 200px;
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 70px;
+  }
+
+  &-year {
+    position: relative;
+    z-index: 2;
+    color: transparent;
+    background: url("../images/img7.png") no-repeat 50%;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  &-mask {
+    display: none;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &-dots {
+    position: absolute;
+    right: -20px;
+    top: 50%;
+  }
+
+  &-number {
+    font-size: 400px;
+    font-weight: 800;
+    color: $primary-color;
+    position: relative;
+    flex: 1;
+    text-align: center;
+
+    &-content {
+      max-width: 470px;
+      margin-left: auto;
+      flex-shrink: 0;
+    }
+  }
+}

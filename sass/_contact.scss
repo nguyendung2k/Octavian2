@@ -1,0 +1,40 @@
+.contact {
+  &-main {
+    position: relative;
+    padding: 135px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: url("../images/img9.png") no-repeat center;
+    background-color: $gray-darkest;
+    border-radius: 12px;
+  }
+
+  &-person {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+  }
+
+  &-liquid {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    right: 100px;
+    z-index: 999;
+  }
+
+  &-content {
+    max-width: 500px;
+    margin: 0 auto;
+    z-index: 99999;
+  }
+
+  &-desc {
+    margin-bottom: 60px;
+  }
+}

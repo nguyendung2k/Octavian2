@@ -31,10 +31,25 @@
   &-content {
     max-width: 500px;
     margin: 0 auto;
-    z-index: 99999;
+    position: relative;
+    z-index: 99;
   }
 
   &-desc {
     margin-bottom: 60px;
+  }
+
+  display: block;
+
+  @include maxWidth(1023px) {
+    margin-bottom: -190px;
+    &-desc {
+      margin-bottom: 40px;
+      color: white;
+    }
+
+    &-main {
+      padding: 50px 20px;
+    }
   }
 }

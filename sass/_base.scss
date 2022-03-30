@@ -71,4 +71,14 @@ main {
       $secondary-color
     );
   }
+
+  @include maxWidth(767px) {
+    height: 45px;
+    padding: 0 50px;
+    font-size: 14px;
+  }
+}
+
+section {
+  display: none;
 }

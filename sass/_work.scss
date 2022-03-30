@@ -1,6 +1,5 @@
 .work {
-  padding-top: 190px;
-  margin-bottom: 190px;
+  margin-bottom: 200px;
 
   &-header {
     text-align: center;
@@ -41,5 +40,24 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  display: block;
+
+  @include maxWidth(1599px) {
+    margin-bottom: 100px;
+  }
+
+  @include maxWidth(1023px) {
+    &-header {
+      margin-bottom: 50px;
+    }
+  }
+
+  @include maxWidth(1023px) {
+    &-list {
+      grid-template-rows: 100px 50px 100px;
+      margin-bottom: 30px;
+    }
   }
 }

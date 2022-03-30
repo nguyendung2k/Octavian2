@@ -25,4 +25,29 @@
       opacity: 0.5;
     }
   }
+
+  display: block;
+
+  @include maxWidth(1599px) {
+    padding-bottom: 100px;
+  }
+
+  @include maxWidth(1023px) {
+    padding-bottom: 100px;
+
+    &-header {
+      margin-bottom: 20px;
+    }
+  }
+
+  @include maxWidth(767px) {
+    &-header {
+      margin-bottom: 40px;
+    }
+    &-list {
+      grid-template-columns: 1fr 1fr;
+      grid-auto-flow: 1fr 1fr 1fr 1fr;
+    }
+    padding-bottom: 100px;
+  }
 }

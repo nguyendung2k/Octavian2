@@ -41,4 +41,31 @@
     object-fit: cover;
     margin-bottom: 20px;
   }
+
+  display: block;
+
+  @include maxWidth(1599px) {
+    padding-bottom: 100px;
+  }
+
+  @include maxWidth(1023px) {
+    padding-bottom: 100px;
+  }
+
+  @include maxWidth(767px) {
+    padding-bottom: 100px;
+
+    &-item {
+      padding: 50px 25px;
+    }
+
+    &-desc {
+      font-size: 18px;
+    }
+
+    &-avatar {
+      width: 40px;
+      height: 40px;
+    }
+  }
 }

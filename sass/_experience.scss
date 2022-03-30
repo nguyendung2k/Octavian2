@@ -45,4 +45,28 @@
       flex-shrink: 0;
     }
   }
+
+  display: block;
+
+  @include maxWidth(1599px) {
+    padding-bottom: 100px;
+  }
+
+  @include maxWidth(1023px) {
+    &-main {
+      flex-direction: column;
+      gap: 40px 0;
+    }
+
+    &-number {
+      font-size: 300px;
+    }
+
+    &-content {
+      max-width: 100%;
+      text-align: center;
+      margin: 0 auto;
+      z-index: 5;
+    }
+  }
 }

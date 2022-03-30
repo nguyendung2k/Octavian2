@@ -12,6 +12,12 @@
     align-items: center;
     gap: 0 50px;
   }
+
+  @include maxWidth(1599px) {
+    &-main {
+      padding: 28px 0;
+    }
+  }
 }
 
 .menu {
@@ -22,7 +28,50 @@
     gap: 0 50px;
     color: white;
   }
+
   &-link {
     font-weight: bold;
+  }
+
+  @include maxWidth(1023px) {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: $gray-dark;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 99999;
+    transform: translateX(100%);
+    transition: 0.25s linear;
+
+    &.is-active {
+      transform: translateX(0);
+    }
+
+    &-list {
+      flex-direction: column;
+      height: 100%;
+      padding: 50px 20px;
+    }
+
+    &-item {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    &-link {
+      display: block;
+      width: 100%;
+      padding: 15px 20px;
+      color: $gray;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      color: white;
+
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
   }
 }
